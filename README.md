@@ -60,7 +60,7 @@ python -c "import bootstrap; import runpy; runpy.run_module('llama_cpp.server', 
 ```python
 docker run -p 6333:6333 -v qdrant_storage:/qdrant/storage qdrant/qdrant
 ```
-После чего docker сам устноавит и зпаустит её. Так же мы указываем ''-v qdrant_storage:/qdrant/storage'' тем самым мы будет сохранять нашу базу. После выполнения этой команды запускаем скрипт bd_settings.py. Он применет настройки к нашей БД
+После чего docker сам установит и зпаустит её. Так же мы указываем ''-v qdrant_storage:/qdrant/storage'' тем самым мы будет сохранять нашу базу. После выполнения этой команды запускаем скрипт bd_settings.py. Он применет настройки к нашей БД
 
 8) Осталось всё это слекить воедино. Для этого у нас есть скрипт rag.py
 В нём:
